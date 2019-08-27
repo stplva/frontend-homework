@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stopwatch</title>
+	<link rel="shortcut icon" href="stopwatch.png" type="image/png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Online Stopwatch</h1>
+		<div id="display">
+			00:00:00.00
+		</div>
+		<div class="buttons">
+			<button id="startPauseButton" class="pure-button button-start">Start</button>
+			<button id="splitButton" class="pure-button button-split">Split</button>
+			<button id="resetButton" class="pure-button button-reset">Reset</button>
+		</div>
+
+		<table class="splitItems pure-table pure-table-horizontal">
+		    <thead>
+		        <tr>
+		            <th>&nbsp;</th>
+		            <th>Elapsed time</th>
+		            <th>Notes</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        
+		    </tbody>
+		</table>
+	</div>
+
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

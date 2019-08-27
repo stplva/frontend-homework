@@ -1,0 +1,37 @@
+/* @import "imported.css"; */
+
+.box1 {
+  width: 1440px;
+  height: 798px;
+  background-color: #F4F4F4;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.box2 {
+  background-color: white;
+  margin-left: 445px;
+  padding: 30px 70px 0px 70px;
+  width: 400px;
+  height: 780px;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(148,148,148,1);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(148,148,148,1);
+  box-shadow: 0px 0px 4px 0px rgba(148,148,148,1);
+  /* border: 2px solid (dashed - пунктир) lightgrey;
+  border-radius: 3px;
+  line-height: 25px;
+  font-style: italic; */
+}
+
+h3 {
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+img {
+  margin-left: 105px;
+}
+
+p {
+  line-height: 25px;
+}

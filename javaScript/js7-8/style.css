@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.box{
+  margin: 80px auto;
+  box-shadow: 0 2px 3px 0 #aaa;
+  border-radius: 3px;
+  background-color: white;
+}
+
+/* Tabs */
+
+.tabs{
+  width: 600px;
+  padding: 0.4em;
+}
+.tabsNav{
+  background-color: #e9e9e9;
+  border-radius: 4px;
+  padding: 0.4em 0.4em 0;
+  margin-bottom: 5px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.tabsNavItem{
+  background-color: #f6f6f6;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: none;
+  margin-right: 0.4em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.3s;
+  position: relative;
+  color: #555;
+}
+.tabsNavItem::before{
+  content: '';
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #e53935;
+  transition: 0.3s;
+}
+.tabsNavItem.isActive::before{
+  width: 100%;
+}
+.tabsNavItem.isActive{
+  background-color: white;
+  color: #333;
+}
+.tabsContent{
+  /* overflow-y: scroll; */
+  /* height: 400px; */
+  padding: 25px 35px;
+}
+.tab{
+  transition: 0.3s;
+  display: none;
+}
+.tab.isActive{
+  display: block;
+}
+.tab p:first-child{
+  margin-top: 0;
+}
+.tab p{
+  margin: 20px 0;
+}
+
+/* ToolTips Form */
+
+.form{
+  width: 600px;
+  padding: 0.4em;
+  text-align: center;
+}
+.form p{
+  color: #555;
+  padding-left: 1em;
+}
+.form h3{
+  text-align: center;
+  margin: 20px 0;
+}
+.form input{
+  padding: 8px 15px;
+  border-radius: 3px;
+  background-color: #eee;
+  border: none;
+  position: relative;
+}
+.inputDiv{
+  width: 50%;
+  margin: 0.8em auto 0;
+}
+.inputDiv p{
+  text-align: left;
+}
+
+/* TOOLTIP */
+
+.myToolTip{
+  position: absolute;
+  box-shadow: 0 2px 3px 0 #aaa;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px 15px;
+  background-color: white;
+  color: #555;
+  font-size: 16px;
+}
+
+/* ^^^ */
+
+.buttons{
+  margin: 30px 0 15px;
+  display: flex;
+  justify-content: center;
+}
+.buttons input[type="submit"], .form button{
+  border-radius: 3px;
+  padding: 8px 0;
+  cursor: pointer;
+  width: 120px;
+}
+.buttons input[type="submit"]:focus, .buttons button:focus{
+  outline: none;
+}
+.buttons input[type="submit"]{
+  background-color: #03a9f4;
+  color: white;
+}
+.buttons input[type="submit"]:hover{
+  background-color: #2196f3;
+}
+.buttons button{
+  border: 2px solid #ccc;
+  margin-left: 15px;
+  background: none;
+  color: #777;
+}
+.buttons button:hover{
+  background-color: #eee;
+}

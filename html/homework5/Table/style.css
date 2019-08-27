@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td, th{
+  border: 9px solid #2b2c2b;
+  padding: 33px 32px;
+}
+
+.y{
+  background-color: #fff251;
+}
+
+.b{
+  background-color: #333633;
+}
+
+.blue{
+  background-color: #00437d;
+}
+
+.r{
+  background-color: #ff5a3c;
+  border: 0;
+}

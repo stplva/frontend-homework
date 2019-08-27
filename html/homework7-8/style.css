@@ -1,0 +1,895 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'LeagueGothic';
+  color: white;
+  overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('fonts/leaguegothic-regular-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open-sans Light';
+    src: url('fonts/OpenSans-Light.woff') format('woff'),
+         url('fonts/OpenSans-Light.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open-sans SemiBold';
+    src: url('fonts/OpenSans-SemiBold.ttf') format('ttf'),
+         url('fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------------------------ TOP  ----------------------------*/
+
+
+.top{
+  background: url(img/bg.jpg) no-repeat center 0px;
+  background-size: cover;
+  min-width: 100%;
+  height: 474px;
+}
+
+.top nav{
+  position: relative;
+  overflow: hidden;
+}
+
+.menu{
+  list-style: none;
+  margin: -22px 0 0 0;
+  position: relative;
+  left: 40vw;
+  float: left;
+}
+
+.menu li{
+  float: left;
+  position: relative;
+}
+
+.submenu{
+  display: none;
+}
+
+.submenu{}
+
+.submenu li{
+  left: 0;
+}
+
+.menu li a{
+  padding: 0 3.5vw 0 0;
+  font-size: 16px;
+  text-decoration: none;
+  text-shadow: 1px 0px 1px black;
+}
+
+.top nav .logo{
+  font-size: 26px;
+  text-shadow: 1px 0px 1px black;
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0 0 25vw;
+}
+
+.top nav .pingbull{
+  float: left;
+  padding: 0 2px 0 0;
+}
+
+.top nav .er{
+  color: #533b5e;
+  float: left;
+  padding: 0 2px 0 0;
+}
+
+.menu li a::after{
+  color: white;
+  text-decoration: none;
+}
+
+.menu li a:hover{
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #edbfff;
+  text-shadow: none;
+}
+
+.panel{
+  background: rgba(0,0,0,0.2);
+  height: 225px;
+  width: 100%;
+  text-shadow: 1px 0px 1px black;
+  position: relative;
+  margin: 74px 0 0 0;
+}
+
+.panel .title{
+  padding-top: 38px;
+  font-size: 24px;
+}
+
+.panel .subtitle{
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #edbfff;
+}
+
+.panel .text{
+  font-size: 12px;
+  font-family: 'Open-sans Light';
+  width: 32vw;
+}
+
+.panel .title, .panel .subtitle, .panel .text{
+  margin-left: 25vw;
+}
+
+.iphone{
+  z-index: 1;
+  position: absolute;
+  top: 130px;
+  right: 28vw;
+  height: 240px;
+}
+
+.sliders1{
+  position: relative;
+  overflow: hidden;
+  left: 47vw;
+  top: 40px;
+}
+
+.sliders1 input{
+  margin: 0px 2px;
+  float: left;
+  height: 12px;
+  width: 12px;
+
+}
+
+
+/*-------------------------- MIDDLE ----------------------*/
+
+.content{
+  position: relative;
+  overflow: hidden;
+  text-shadow: 1px 0px 1px black;
+}
+
+.about{
+  height: 215px;
+  width: 100%;
+  background: linear-gradient(to top, #322539, #745083);
+  border: 0.1px solid #3f3f3f;
+}
+
+.about .title{
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0 0 0 2px;
+}
+
+.about .text{
+  font-size: 12px;
+  font-family: 'Open-sans Light';
+}
+
+a{
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 1px;
+}
+
+.a{
+  text-align: right;
+  padding: 0 1px 0 0;
+}
+
+.about a:hover{
+  text-decoration: none;
+  text-shadow: 0px 0px 5px white;
+}
+
+.one, .two, .three{
+  width: 14vw;
+  margin: 38px 0 0 0;
+  padding: 1px 0 0 5.5vw;
+  float: left;
+}
+
+.one {
+  margin: 38px 0 0 20vw;
+}
+
+.one_sprite, .two_sprite, .three_sprite{
+  width: 25px;
+  height: 25px;
+  background: url(img/sprite.png) 0 0 no-repeat;
+  position: relative;
+  bottom: 145px;
+  left: -3vw;
+}
+
+.one_sprite{
+  background-position: 0 0;
+}
+
+.two_sprite{
+  width: 31px;
+  background-position: -25px 0
+}
+
+.three_sprite{
+  background-position: -56px 0;
+}
+
+.reviews{
+  width: 100%;
+  height: 355px;
+  background: #f9f9f9;
+  font-size: 12px;
+  position: relative;
+}
+
+.review_ex, .updates{
+  float: left;
+  width: 22.5vw;
+  padding: 23px 2vw;
+}
+
+.review_ex{
+  background-color: white;
+  margin: 50px 2vw 0 25vw;
+  border-bottom: 1px solid #efefef;
+  height: 112px;
+}
+
+.review_ex .text{
+  height: 94px;
+}
+
+.review_ex p, .updates p{
+  color: #454545;
+  text-shadow: none;
+}
+
+.review_ex h{
+  color: #edbfff;
+}
+
+.review_ex .text, .updates .text p{
+  font-size: 12px;
+  font-family: 'Open-sans Light';
+}
+
+.review_photo{
+  position: absolute;
+  top: 60px;
+  left: 21.5vw;
+}
+
+.sliders2{
+  position: absolute;
+  left: 36vw;
+  top: 222px;
+}
+
+.sliders2 input{
+  margin: 0px 2px;
+  float: left;
+  height: 12px;
+  width: 12px;
+}
+
+.updates{
+  margin: 50px 0 15px 0;
+  height: 161px;
+}
+
+.updates .text{height: 114px;}
+
+.updates .text .bold{
+  font-family: 'Open-sans SemiBold';
+}
+
+.ione, .itwo, .ithree{
+  width: 30px;
+  height: 30px;
+  background: url(img/icon.png) -217px -103px no-repeat;
+  float: left;
+  clear: both;
+  border-radius: 100px;
+  margin: 3px;
+}
+
+.intext1, .intext2, .intext3{margin: 1px}
+
+.updates a{
+  color: #454545;
+}
+
+.updates a:hover{
+  text-decoration: none;
+  text-shadow: 0px 0px 5px #454545;
+}
+
+.updates .text, .review_ex .text{
+  position: relative;
+  overflow: hidden;
+}
+
+.logos{
+  clear: both;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.logos img{
+  max-width: 48vw;
+}
+
+/*-----------------------  BOTTOM  --------------------------*/
+
+.botcontent{
+  height: 206px;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.pingbuller, .comments, .news{
+  width: 15vw;
+  height: 128px;
+  float: left;
+  margin: 38px 4vw 0 0;
+}
+
+.pingbuller{
+  margin-left: 25vw;
+}
+
+.botcontent .title{
+  color: #454545;
+  font-size: 16px;
+}
+
+.botcontent .text{
+  color: #787878;
+  font-size: 12px;
+  font-family: 'Open-sans Light';
+}
+
+.botcontent .copyrights{
+  font-size: 12px;
+  font-family: Georgia;
+  color: #c5c5c5;
+  clear: both;
+  padding: 6px 0;
+}
+
+.news .text, .comments .text{height: 90px;}
+
+.pingbuller .text{height: 59px;}
+
+.botcontent .text{
+  clear: both;
+  overflow: hidden;
+}
+
+.bigtitle, .pingbuller .er{
+  float: left;
+  font-size: 26px;
+}
+
+.bigtitle{
+  color: #454545;
+}
+
+.pingbuller .er{
+  color: #c5c5c5;
+}
+
+.botnav{
+  height: 66px;
+  width: 100%;
+  background: url(img/bg2.png) no-repeat;
+  background-size: cover;
+}
+
+.botnav nav p{
+  font-family: 'Open-sans Light';
+  font-size: 12px;
+  position: relative;
+  right: 21vw;
+  top: 22px;
+  float: right;
+}
+
+.botnav nav{
+  position: relative;
+  overflow: hidden;
+}
+
+.botnav ul{
+  position: relative;
+  left: 25vw;;
+  list-style: none;
+  margin: 22px 0 0 0;
+  float: left;
+}
+
+.botnav nav li{
+  position: relative;
+  float: left;
+}
+
+.botnav nav li a{
+  padding: 0 3.5vw 0 0;
+  font-size: 16px;
+  text-decoration: none;
+  text-shadow: 1px 0px 1px black;
+}
+
+.botnav nav li a::after{
+  color: white;
+  text-decoration: none;
+}
+
+.botnav nav li a:hover{
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #edbfff;
+  text-shadow: none;
+}
+
+
+
+/*----------------------ADAPTIVE DESIGN-----------------------*/
+
+
+@media (max-width: 3000px) {
+  .one_sprite, .two_sprite, .three_sprite{
+    bottom: 94px;
+    left: -2vw;
+  }
+
+  .review_photo{
+  left: 24vw;
+  }
+}
+
+@media (max-width: 2077px) {
+  .one_sprite, .two_sprite, .three_sprite{
+    bottom: 110px;
+    left: -2.5vw;
+  }
+
+  .review_photo{
+  left: 23.5vw;
+  }
+}
+
+@media (max-width: 1637px){
+  .one_sprite, .two_sprite, .three_sprite{
+    bottom: 128px;
+  }
+}
+
+@media (max-width: 1576px){
+  .review_photo{
+  left: 23vw;
+  }
+}
+
+@media (max-width: 1309px) {
+  .one_sprite, .two_sprite, .three_sprite{
+    bottom: 146px;
+    left: -3vw;
+  }
+
+  .review_photo{
+  left: 22vw;
+  }
+
+  .about .text{
+    height: 109px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1192px) {
+  .copyrights{display: none;}
+
+  .pingbuller .text{height: 92px;}
+
+  .botnav nav p{display: none;}
+
+  .botnav nav ul{left: ;}
+
+  .botnav nav ul li a{padding: 0 7vw 0 0;}
+}
+
+@media (max-width: 1103px) {
+  .one_sprite, .two_sprite, .three_sprite{
+    bottom: 148px;
+  }
+}
+
+
+
+/*768 and 960*/
+@media (max-width: 1075px) {
+  .top nav .logo{
+    left: 0;
+    padding-left: 5vw;
+  }
+
+  .menu{
+    margin: -22px 0 0 0;
+    left: 0;
+    padding: 0 0 0 22vw;
+  }
+
+  .menu li{left: 0;}
+
+  .menu li a{
+    padding: 0 4vw 0 0;
+    font-size: 18px;
+  }
+
+  .panel .title, .logo{font-size: 32px;}
+
+  .panel .title, .panel .subtitle, .panel .text{
+    margin-left: 0;
+    padding-left: 10vw;
+  }
+
+  .panel .text {
+    width: 35vw;
+    overflow: hidden;
+    height: 93px;
+  }
+
+  .iphone {
+    height: 275px;
+    top: 100px;
+    right: 112px;
+  }
+
+  .sliders1{left: 45vw;}
+
+  .one, .two, .three{
+    width: 19vw;
+    margin: 38px 0 0 0;
+    padding: 1px 0 0 5.5vw;
+  }
+
+  .one {margin-left: 10vw;}
+
+  .title, .review_ex p{font-size: 18px;}
+
+  .about .text{
+    height: 90px;
+    overflow: hidden;
+  }
+
+  .one_sprite, .two_sprite, .three_sprite{
+    left: -5vw;
+    bottom: 132px;
+  }
+
+  .review_ex{margin: 50px 2vw 0 14vw}
+
+  .review_ex .text{
+    overflow: hidden;
+    height: 90px;
+    width: 30vw;
+  }
+
+  .updates .text{
+    overflow: hidden;
+    height: 110px;
+    width: 30vw;
+    margin: 0 0 5px 0;
+  }
+
+  .updates{margin: 50px 0 12px 0}
+
+  .review_ex, .updates{
+    width: 30vw;
+    padding: 25px 4vw;
+  }
+
+  .review_photo{
+    left: 12vw;
+    height: 4.5vw;
+  }
+
+  .sliders2{left: 29vw;}
+
+  .logos img{
+    max-width: 73vw;
+  }
+
+  .botcontent .bigtitle, .botcontent .er{
+    font-size: 18px;
+    color: #454545;
+  }
+
+  .pingbuller, .comments, .news{
+    width: 22vw;
+    margin: 38px 4vw 0 0;
+  }
+
+  .news .text, .comments .text{height: 90px;}
+
+  .pingbuller .text{height: 74px;}
+
+  .pingbuller{margin-left: 14vw;}
+
+  .botcontent .text{
+    clear: both;
+    overflow: hidden;
+  }
+
+  .botnav nav ul{
+    left: 5vw;
+  }
+
+  .botnav nav li{left: 0;}
+
+  .botnav nav ul li a{
+    padding: 0 4vw 0 0;
+    font-size: 18px;
+  }
+
+  .botnav nav p{
+    display: block;
+    right: 5vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .botnav nav p{display: none;}
+
+  .botnav nav ul{
+    margin: 24px 0 0 0;
+    left: 10vw;
+  }
+
+  .botnav nav ul li a{
+    padding: 0 7vw 0 0;
+  }
+}
+
+
+
+/*480*/
+@media(max-width: 550px) {
+  *{overflow-x: unset;}
+
+  .top, .about{height: 490px;}
+
+  .reviews{height: 680px;}
+
+  .botcontent{height: 600px;}
+
+  .botnav{height: 170px;}
+
+  .top nav .logo{
+    left: 0;
+    font-size: 32px;
+    padding: 50px 0 0 37vw;
+  }
+
+  .menu{
+    left: 0;
+    padding: 0 0 30px 44vw;
+    margin: 16px 0 0 0;
+  }
+
+  .panel{margin: 0;}
+
+  .hide{display: none;}
+
+  /*
+  .home:hover .submenu{
+    display: block;
+  }
+
+  .submenu li{float: left;} */
+
+  .panel .text {display: none;}
+
+  .panel .title{padding-top: 80px;}
+
+  /* .iphone{
+    top: 135px;
+    right: 10vw;
+    width: 33vw;
+    height: auto;
+  } */
+
+  .iphone{
+    position: relative;
+    height: 240px;
+    top: -223px;
+    right: -53vw;
+  }
+
+  .sliders1{
+    top: -209px;
+    left: 0;
+    padding: 0 0 0 41vw;
+  }
+
+  /* .sliders1{
+    top: 40px;
+    left: 41vw;
+  } */
+
+  .one,.two, .three{
+    clear: both;
+    margin: 20px 0 0 0;
+    width: 75vw;
+    float: none;
+    padding: 0 0 0 14vw;
+  }
+
+  .one{margin: 50px 0 0 0;}
+
+  .about .title{font-size: 18px}
+
+  .about .text{height: 58px;}
+
+  .one_sprite, .two_sprite, .three_sprite{
+    left: -8.5vw;
+    bottom: 100px;
+  }
+
+  .review_ex, .updates{
+    width: 66vw;
+    clear: both;
+    margin: 60px 0 0 14vw;
+  }
+
+  .review_ex .text, .updates .text{
+    width: 66vw;
+  }
+
+  .review_ex p{padding-left: 12px;}
+
+  .updates{
+    margin: 50px 0 15px 14vw;
+    height: 175px;
+  }
+
+  .review_ex{height: 150px;}
+
+  .review_ex .text, .updates .text{
+    height: 115px;
+    padding: 0;
+  }
+
+  .review_photo{
+    position: absolute;
+    left: 8vw;
+    height: 40px;
+    top: 75px;
+  }
+
+  .sliders2{
+    left: 44vw;
+    top: 280px;
+  }
+
+  .logos{
+    position: relative;
+    top: 15px;
+  }
+
+  .reviews{
+    border-bottom: 2px solid #e6e6e6;
+  }
+
+  .botcontent{
+    box-shadow: 0px 4px 8px -6px black;
+    -webkit-box-shadow: 0px 4px 8px -6px black;
+    position: relative;
+  }
+
+  .pingbuller, .comments, .news{
+    clear: both;
+    margin: 55px 0 0 10vw;
+    width: 75vw;
+  }
+
+  .pingbuller .text{height: 75px;}
+
+  .botcontent .text{overflow: hidden;}
+
+  .comments .text, .news .text{height: 90px;}
+
+  .about .title, .reviews .title, .botcontent .title, .pingbuller .bigtitle,
+  .pingbuller .er, .review_ex h, .review_ex p{
+    font-size: 22px;
+  }
+
+  .botnav nav{text-align: center;}
+
+  .botnav nav ul{
+    margin: 40px 0 20px 7.5vw;
+    left: 0;
+  }
+
+  .botnav nav ul li a{
+    padding: 0 4vw 0 0;
+  }
+
+  .botnav nav li{
+    left: 0;
+  }
+
+  .botnav nav p{
+    display: block;
+    float: none;
+    top: 0;
+    right: 0;
+    clear: both;
+  }
+}
+
+@media (max-width: 415px) {
+  .iphone {
+    position: relative;
+    height: 200px;
+    top: -201px;
+    right: -58vw;
+  }
+
+  .sliders1 {top: -160px;}
+}
+
+@media (max-width: 375px) {
+  .iphone {
+    position: relative;
+    height: 200px;
+    top: -201px;
+    right: -58vw;
+  }
+
+  .panel .subtitle {font-size: 12px;}
+
+  .menu {padding: 0 0 30px 47vw;}
+}
+
+@media (max-width: 350px){
+  .updates .text .bold {
+    width: 230px;
+  }
+
+  .one_sprite, .two_sprite, .three_sprite {
+    left: -10vw;
+  }
+
+  .panel .title{
+    font-size: 26px;
+  }
+
+  .panel .subtitle {
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+}
