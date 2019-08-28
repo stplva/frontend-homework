@@ -1,5 +1,4 @@
-$(document).ready(function(){
-
+  //plugins
   $('.carousel').slick({
     infinite: true,
     dots: true,
@@ -23,6 +22,12 @@ $(document).ready(function(){
     $(this).on('click', checkAll);
   }
 
-    $('.selectAll').on('click',checkAll)
+  $('.selectAll').on('click',checkAll);
 
-});
+  // dropping menu
+  var $links = $('.submenuLink');
+  $links.on('click', function(e) {
+    e.preventDefault();
+    var $submenu = $(this).siblings('.submenu');
+    $submenu.toggleClass('animated')
+  })
