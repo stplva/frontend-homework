@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+body{
+  /* background-color: cornflowerblue; */
+  background-color: lightskyblue;
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+h2{
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  margin: 30px 20%;
+}
+h2 img{
+  height: 35px;
+  position: relative;
+  top: 8px;
+  margin-right: 10px;
+}
+a{
+  font-weight: bold;
+  color: #555;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 20px;
+  transition: 0.3s;
+}
+a:hover{
+  text-decoration: underline;
+  color: #333;
+}
+/* CAROUSEL */
+
+.carousel{
+  margin: 50px;
+}
+.fas{
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+/* TEMPLATE */
+
+.templateDiv{
+  margin: 50px 0;
+  overflow: hidden;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.userCard{
+  display: block;
+  float: left;
+  background-color: white;
+  margin: 0 50px 80px;
+  padding: 35px 70px;
+  width: 500px;
+  min-height: 715px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(148,148,148,1);
+  box-shadow: 0px 0px 4px 0px rgba(148,148,148,1);
+}
+.userCard ul{
+  padding-inline-start: 40px;
+  list-style: circle;
+}
+.userCard ul li{
+  padding: 5px 0;
+}
+.userCard .block{
+  border-bottom: 3px double #555;
+  padding: 15px 0;
+}
+.userCard .block .text{
+  margin-left: 25px;
+}
+.userCard .generalInfo{
+  text-align: center;
+}
+.userCard .generalInfo img{
+  height: 150px;
+  margin: 10px;
+}
+.userCard .contactLink{
+  font-weight: normal;
+  text-transform: none;
+  font-variant: normal;
+  font-size: unset;
+  color: dodgerblue;
+}
+.userCard .contactLink:hover{
+  color: royalblue;
+}
+.userCard .feedback{
+  border: none;
+}
+
+/* FOOTER */
+footer{
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  clear: both;
+}
+footer p{
+  color: #555;
+}
+footer a{
+
+}

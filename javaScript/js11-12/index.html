@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Plugin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4731f5d3bc.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.carousel.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <h2><i class="fas fa-puzzle-piece"></i>jQuery Carousel Plugin</h2>
+
+      <div class="carousel">
+        <div class="carousel-arrow carousel-arrow-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="carousel-hider">
+          <ul class="carousel-ul">
+            <li class="carousel-li">
+              <img src="https://image.shutterstock.com/image-photo/ocean-wave-indian-during-storm-600w-309263717.jpg" alt="picture">
+              <p class="carousel-description">Picture description</p>
+            </li>
+            <li class="carousel-li">
+              <img src="https://image.shutterstock.com/image-photo/cape-peninsulasouth-africa-06192019-photo-600w-1456489949.jpg" alt="picture">
+              <p class="carousel-description">Picture description</p>
+            </li>
+            <li class="carousel-li">
+              <img src="https://image.shutterstock.com/image-photo/abstract-ocean-art-natural-luxury-600w-1040400583.jpg" alt="picture">
+              <p class="carousel-description">Picture description</p>
+            </li>
+            <li class="carousel-li">
+              <img src="https://image.shutterstock.com/image-photo/plastic-pollution-ocean-environmental-problem-600w-1074166649.jpg" alt="picture">
+              <p class="carousel-description">Picture description</p>
+            </li>
+            <li class="carousel-li">
+              <img src="https://image.shutterstock.com/image-photo/sunset-rocky-beach-breaking-waves-600w-1414032365.jpg" alt="picture">
+              <p class="carousel-description">Picture description</p>
+            </li>
+            <li class="carousel-li">
+              <img src="https://image.shutterstock.com/image-photo/blue-pool-water-sun-reflections-600w-1430051099.jpg" alt="picture">
+              <p class="carousel-description">Picture description</p>
+            </li>
+          </ul>
+        </div>
+        <div class="carousel-arrow carousel-arrow-next"><i class="fas fa-chevron-right"></i></div>
+      </div>
+
+
+      <h2><i class="fas fa-table"></i>Templates</h2>
+
+      <div class="templateDiv">
+
+        <script type="text/template" id="item_tmpl">
+          <% for (var i = 0; i < data.length; i++) { %>
+          <div class="userCard">
+
+            <div class="block generalInfo">
+              <h3 class="userName"><%= data[i].userName %></h3>
+              <img src="<%= data[i].img %>">
+              <p><%= data[i].shortInfo %></p>
+              <p><%= data[i].age %></p>
+            </div>
+            <div class="block reasons">
+              <p>I want to learn FrontEnd because:</p>
+              <ul>
+                <li><%= data[i].reason1 %></li>
+                <li><%= data[i].reason2 %></li>
+                <li><%= data[i].reason3 %></li>
+              </ul>
+            </div>
+            <div class="block contacts">
+              <p>My email:</p>
+              <a class="contactLink text" href="mailto:<%= data[i].email %>" target="_blank"><%= data[i].email %></a>
+              <p>My github account:</p>
+              <a class="contactLink text" href="https://github.com/<%= data[i].github %>" target="_blank"><%= data[i].github %></a>
+            </div>
+            <div class="block feedback">
+              <p>My feedback:</p>
+              <p class="text"><%= data[i].feedback %></p>
+            </div>
+
+          </div>
+          <% } %>
+        </script>
+
+      </div>
+  <!-- https://png.pngtree.com/svg/20170128/avatar_white_woman_hair_779584.png -->
+
+    </div>
+
+    <footer>
+      <p>Made by Sofiia Teplova. &copy;All rights reserved. 2019</p>
+      <p><a href="mailto:sofiia.teplova@gmail.com">Contact me</a></p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.carousel.js"></script>
+    <script type="text/javascript" src="templating.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
